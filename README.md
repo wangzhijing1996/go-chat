@@ -155,7 +155,7 @@ user = "root"
 
 运行程序
 ```shell
-go run cmd/main.go
+go run main/main.go
 ```
 
 ### 运行前端代码
@@ -277,7 +277,7 @@ mac
 make build-darwin
 
 实际执行命令是Makefile下的
-CGO_ENABLED=0 GOOS=darwin GOARCH=amd64 go build -o bin/chat cmd/main.go
+CGO_ENABLED=0 GOOS=darwin GOARCH=amd64 go build -o bin/chat main/main.go
 ```
 
 linux
@@ -285,7 +285,7 @@ linux
 make build
 
 实际执行命令是Makefile下的
-CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o bin/chat cmd/main.go
+CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o bin/chat main/main.go
 ```
 
 ### 后端proto文件生成
